@@ -1,116 +1,117 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-
 <body>
-  <div class="fixed row">
-    <div class="col-sm-7">
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="row">
-            <div class="col-sm-2">
-              <a id="menucollapse" #menucollapse (click)="onCollapseMenu()"><i class="fa fa-bars menuIconStyle"></i></a>
-            </div>
-            <div class="col-sm-3">
-              <img src="assets/logo.gif" alt="" id="aac0819im1">
-            </div>
-            <div class="col-sm-3">
-              <img src="" alt="" id="aac0819im2">
-            </div>
-          </div>
-        </div>
-        <div class="<col-sm-8></col-sm-8>">
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-5">
-      <div class="row">
-        <div class="col-sm-3">
-          <div class="input-group add-on">
-            <input class="form-control bg-faded" placeholder="Search" type="text">
-            <div class="input-group-btn">
-              <button class="btn btn-default" type="submit"><i class="fa fa-search menuIconStyle"></i></button>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-1">
-          <i class="fa fa-question-circle menuIconStyle" aria-hidden="true"></i>
-        </div>
-        <div class="col-sm-1">
-          <div ngbDropdown>
-            <i id="tilesmenu" class="fa fa-th menuIconStyle" ngbDropdownToggle></i>
-            <div class="dropdown-menu  profileMenus" aria-labelledby="tilesmenu">
-              <a class="dropdown-item fa fa-eye profileMenuItem fa-fw" href="#" style="color:#DD5826"> &nbsp;App1</a>
-              <hr>
-              <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; App2</a>
-              <hr>
-              <a class="dropdown-item fa fa-barcode profileMenuItem" href="#" style="color:#FF8400">&nbsp; App3</a>
-              <hr>
-              <a class="dropdown-item fa fa-file-text-o profileMenuItem" href="#" style="color:#51B543">&nbsp; App4</a>
-              <hr>
-              <a class="dropdown-item fa fa-tags profileMenuItem" href="#" style="color:#0077c8">&nbsp; App5</a>
-              <hr>
-              <a class="dropdown-item fa fa-picture-o profileMenuItem" href="#" style="color:#0098EF">&nbsp; App6</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-1">
-          <i class="fa fa-bell-o menuIconStyle" aria-hidden="true"></i>
-        </div>
-        <div class="col-sm-4 userProfileStyle">
-          <div ngbDropdown class="d-inline-block">
-            <a id="profileMenu" ngbDropdownToggle class="userNameStyle">User Name</a>
-            <div class="dropdown-menu" style="top:34px;" aria-labelledby="profileMenu">
-              <button class="w3-button menuHighlight">Logout <i class="fa fa-sign-out"></i> </button>
-              <hr>
-              <a class="dropdown-item fa fa-user profileMenuItem fa-fw" href="#">&nbsp; Profile</a>
-              <hr>
-              <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; Settings</a>
-              <hr>
-              <a class="dropdown-item fa fa-calendar profileMenuItem" href="#">&nbsp; Calendar</a>
-              <hr>
-              <a class="dropdown-item fa fa-envelope-o profileMenuItem" href="#">&nbsp; Inbox</a>
-              <hr>
-              <a class="dropdown-item fa fa-tasks profileMenuItem" href="#">&nbsp; Tasks</a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container-fluid">
+<div class="fixed row">
+  <div class="col-sm-7">
     <div class="row">
-      <div class="col-sm-1 menufixed menubaricon" id="menubar" #menubar>
-        <div class="w3-sidebar w3-bar-block card menubarWidth">
-          <a routerLink="home" id="aac0819a1" class="w3-bar-item w3-button homeBorder  menuHighlight homemenuHeader"><i class="fa fa-home iconStyle menuIconSpacing"></i>{{homelabel}} </a>
-          <button class="w3-button w3-block w3-left-align border text-muted menuHeader" (click)="displayMenuList()"><i class="fa fa-book iconStyle menuIconSpacing"></i> {{collection1}} 
-           <span class="" #collection1Icon></span>
-                       </button>
-          <div #menuList class="w3-hide w3-card-2">
-            <nav class="vertical">
-              <ul>
-                <li>
-                  <a class="w3-button w3-left-align text-muted menuFont secondlevelmenu" (click)="displaySubMenuList()">Menu<i #menuIcon class="fa fa-caret-down pull-right"></i> </a>
-                  <ul class="submenuStyle">
-                    <div #submenu class="w3-hide">
-                      <li><a routerLink="#" class="w3-button w3-left-align menuFont thirdlevelmenu">Sub menu 1</a></li>
-                      <li><a routerLink="#" class="w3-button w3-left-align menuFont thirdlevelmenu">Sub menu 2</a></li>
-                    </div>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-2">
+            <a id="menucollapse" #menucollapse (click)="onCollapseMenu()"><i class="fa fa-bars menuIconStyle"></i></a>
           </div>
-          <a routerLink="logout" class="w3-bar-item w3-button border text-muted menuHeader"><i class="fa fa-sign-out iconStyle menuIconSpacing"></i> {{logoutlabel}}  </a>
+          <div class="col-sm-3">
+           
+          </div>
+          <div class="col-sm-3">
+            <img src="" alt="" id="aac0819im2">
+          </div>
         </div>
       </div>
-      <div class="col-sm-11 mainContentMinpadding" #maincont id="maincont">
+      <div class="<col-sm-8></col-sm-8>">
       </div>
     </div>
   </div>
+  <div class="col-sm-5">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="input-group add-on">
+          <input class="form-control bg-faded" placeholder="Search" type="text">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="fa fa-search menuIconStyle"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-1">
+        <i class="fa fa-question-circle menuIconStyle" aria-hidden="true"></i>
+      </div>
+      <div class="col-sm-1">
+        <div ngbDropdown>
+          <i id="tilesmenu" class="fa fa-th menuIconStyle" ngbDropdownToggle></i>
+          <div class="dropdown-menu  profileMenus" aria-labelledby="tilesmenu">
+            <a class="dropdown-item fa fa-eye profileMenuItem fa-fw" href="#" style="color:#DD5826"> &nbsp;App1</a>
+            <hr>
+            <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; App2</a>
+            <hr>
+            <a class="dropdown-item fa fa-barcode profileMenuItem" href="#" style="color:#FF8400">&nbsp; App3</a>
+            <hr>
+            <a class="dropdown-item fa fa-file-text-o profileMenuItem" href="#" style="color:#51B543">&nbsp; App4</a>
+            <hr>
+            <a class="dropdown-item fa fa-tags profileMenuItem" href="#" style="color:#0077c8">&nbsp; App5</a>
+            <hr>
+            <a class="dropdown-item fa fa-picture-o profileMenuItem" href="#" style="color:#0098EF">&nbsp; App6</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <i class="fa fa-bell-o menuIconStyle" aria-hidden="true"></i>
+      </div>
+      <div class="col-sm-4 userProfileStyle">
+        <div ngbDropdown class="d-inline-block">
+          <a id="profileMenu" ngbDropdownToggle class="userNameStyle"><img src="../assets/profile.png" height="25" width="25"></a>
+          <div class="dropdown-menu" style="top:34px;" aria-labelledby="profileMenu">
+           <a class="dropdown-item fa fa-sign-out profileMenuItem  fa-fw">&nbsp; Logout</a>
+            <hr>
+            <a class="dropdown-item fa fa-user profileMenuItem fa-fw" href="#">&nbsp; Profile</a>
+            <hr>
+            <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; Settings</a>
+            <hr>
+            <a class="dropdown-item fa fa-calendar profileMenuItem" href="#">&nbsp; Calendar</a>
+            <hr>
+            <a class="dropdown-item fa fa-envelope-o profileMenuItem" href="#">&nbsp; Inbox</a>
+            <hr>
+            <a class="dropdown-item fa fa-tasks profileMenuItem" href="#">&nbsp; Tasks</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-1 menufixed menubaricon" id="menubar" #menubar>
+      <div class="w3-sidebar w3-bar-block card menubarWidth">
+        <a routerLink="home" id="aac0819a1" class="w3-bar-item w3-button homeBorder  menuHighlight homemenuHeader"><i
+          class="fa fa-home iconStyle menuIconSpacing"></i>{{homelabel}} </a>
+        <button class="w3-button w3-block w3-left-align border text-muted menuHeader" (click)="displayMenuList()"><i
+          class="fa fa-folder-o iconStyle menuIconSpacing"></i> {{collection1}}
+          <span class="" #collection1Icon></span>
+        </button>
+        <div #menuList class="w3-hide w3-card-2">
+          <nav class="vertical">
+            <ul>
+              <li>
+                <a class="w3-button w3-left-align text-muted menuFont secondlevelmenu" (click)="displaySubMenuList()">Menu<i
+                  #menuIcon class="fa fa-caret-down pull-right"></i> </a>
+                <ul class="submenuStyle">
+                  <div #submenu class="w3-hide">
+                    <li><a routerLink="#" class="w3-button w3-left-align menuFont thirdlevelmenu">Sub menu 1</a></li>
+                    <li><a routerLink="#" class="w3-button w3-left-align menuFont thirdlevelmenu">Sub menu 2</a></li>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col-sm-11 mainContentMinpadding" #maincont id="maincont">
+    </div>
+  </div>
+</div>
 </body>
 </html>

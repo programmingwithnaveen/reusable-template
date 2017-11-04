@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import {Component, ElementRef, ViewChild} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -28,9 +28,6 @@ export class AppComponent {
   searchCollapsed: boolean = false;
 
 
-
-
-
   constructor(private element: ElementRef) {
 
   }
@@ -49,7 +46,6 @@ export class AppComponent {
       this.collection1Icon.nativeElement.className = 'fa fa-chevron-down pull-right';
     }
   }
-
 
 
   displaySubMenuList(): void {
@@ -88,6 +84,7 @@ export class AppComponent {
 
     }
   }
+
   displayDomesticSubMenu(): void {
     if (this.submenu.nativeElement.className.indexOf('w3-hide') !== -1) {
       this.submenu.nativeElement.className = this.submenu.nativeElement.className.replace(' w3-hide', '');

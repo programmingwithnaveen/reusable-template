@@ -9,7 +9,7 @@ export class AppComponent {
 
   title = 'Sample Template';
   homelabel = '';
-  collection1 = '';
+  collection = '';
 
   logoutlabel = '';
   state = 'text';
@@ -20,7 +20,7 @@ export class AppComponent {
   @ViewChild('submenu') submenu: ElementRef;
 
   @ViewChild('maincont') maincont: ElementRef;
-  @ViewChild('collection1Icon') collection1Icon: ElementRef;
+  @ViewChild('collectionIcon') collectionIcon: ElementRef;
 
   @ViewChild('menuIcon') menuIcon: ElementRef;
 
@@ -38,12 +38,12 @@ export class AppComponent {
       this.menuList.nativeElement.previousElementSibling.className += ' w3-green';
       this.showordersmenu();
       this.maincont.nativeElement.className = 'col-sm-10 mainContentpadding';
-      this.collection1Icon.nativeElement.className = 'fa fa-chevron-up pull-right';
+      this.collectionIcon.nativeElement.className = 'fa fa-chevron-up pull-right';
     } else {
       this.menuList.nativeElement.className = this.menuList.nativeElement.className.replace(' w3-show', '');
       this.menuList.nativeElement.previousElementSibling.className =
         this.menuList.nativeElement.previousElementSibling.className.replace(' w3-green', '');
-      this.collection1Icon.nativeElement.className = 'fa fa-chevron-down pull-right';
+      this.collectionIcon.nativeElement.className = 'fa fa-chevron-down pull-right';
     }
   }
 
@@ -63,7 +63,7 @@ export class AppComponent {
     if (this.state === 'text') {
       this.state = 'icon';
       this.homelabel = '';
-      this.collection1 = '';
+      this.collection = '';
 
       this.logoutlabel = '';
 
@@ -73,14 +73,14 @@ export class AppComponent {
       }
 
       this.maincont.nativeElement.className = 'col-sm-11 mainContentMinpadding';
-      this.collection1Icon.nativeElement.className = '';
+      this.collectionIcon.nativeElement.className = '';
 
 
     }
     else {
       this.showordersmenu();
       this.maincont.nativeElement.className = 'col-sm-10 mainContentpadding';
-      this.collection1Icon.nativeElement.className = 'fa fa-chevron-down menuIconPosition';
+      this.collectionIcon.nativeElement.className = 'fa fa-chevron-down menuIconPosition';
 
     }
   }
@@ -94,7 +94,7 @@ export class AppComponent {
 
   showordersmenu(): void {
     this.homelabel = 'Home';
-    this.collection1 = 'Collection 1';
+    this.collection = 'Collection';
 
     this.logoutlabel = 'Logout';
     this.state = 'text';

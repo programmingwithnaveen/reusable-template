@@ -11,7 +11,7 @@
             <a id="menucollapse" #menucollapse (click)="onCollapseMenu()"><i class="fa fa-bars menuIconStyle"></i></a>
           </div>
           <div class="col-sm-3">
-           
+
           </div>
           <div class="col-sm-3">
             <img src="" alt="" id="aac0819im2">
@@ -40,39 +40,50 @@
       <div class="col-sm-1">
         <div ngbDropdown>
           <i id="tilesmenu" class="fa fa-th menuIconStyle" ngbDropdownToggle></i>
-          <div class="dropdown-menu  profileMenus" aria-labelledby="tilesmenu">
-            <a class="dropdown-item fa fa-eye profileMenuItem fa-fw" href="#" style="color:#DD5826"> &nbsp;App1</a>
-            <hr>
-            <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; App2</a>
-            <hr>
-            <a class="dropdown-item fa fa-barcode profileMenuItem" href="#" style="color:#FF8400">&nbsp; App3</a>
-            <hr>
-            <a class="dropdown-item fa fa-file-text-o profileMenuItem" href="#" style="color:#51B543">&nbsp; App4</a>
-            <hr>
-            <a class="dropdown-item fa fa-tags profileMenuItem" href="#" style="color:#0077c8">&nbsp; App5</a>
-            <hr>
-            <a class="dropdown-item fa fa-picture-o profileMenuItem" href="#" style="color:#0098EF">&nbsp; App6</a>
+          <div id="aa20819di10" class="dropdown-menu dropdown-menu-right profileMenus"
+               aria-labelledby="tilesmenu" style="width:250px">
+            <div class="row">
+              <div class="col-sm-6 tilesspacing">
+                <a href="#" class="btn btn-lg">
+                  <span class="dropdown-item fa fa-eye fa-3x fa-fw" style="color:#DD5826"></span><br> &nbsp;APP 1
+                </a>
+              </div>
+              <div class="col-sm-6 tilesspacing">
+                <a href="#" class="btn btn-lg">
+                  <span class="dropdown-item fa fa-barcode fa-3x" style="color:#FF8400"></span><br> &nbsp; APP 2
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 tilesspacing">
+                <a href="#" class="btn btn-lg">
+                  <span class="dropdown-item fa  fa-3x fa-tags" style="color:#0077c8"></span><br> &nbsp;APP 3
+                </a>
+              </div>
+              <div class="col-sm-6 tilesspacing">
+                <a href="#" class="btn btn-lg">
+                  <span class="dropdown-item fa  fa-3x fa-file-text-o" style="color:#51B543"></span><br> &nbsp;APP 4
+                </a>
+              </div>
+            </div>
           </div>
+
         </div>
       </div>
       <div class="col-sm-1">
         <i class="fa fa-bell-o menuIconStyle" aria-hidden="true"></i>
       </div>
-      <div class="col-sm-4 userProfileStyle">
-        <div ngbDropdown class="d-inline-block">
-          <a id="profileMenu" ngbDropdownToggle class="userNameStyle"><img src="../assets/profile.png" height="25" width="25"></a>
-          <div class="dropdown-menu" style="top:34px;" aria-labelledby="profileMenu">
-           <a class="dropdown-item fa fa-sign-out profileMenuItem  fa-fw">&nbsp; Logout</a>
+      <i class="fa fa-user-circle-o fa-2x menuIconStyle"></i>
+
+      <div id="aa20819di8"  class="userProfileStyle" style="align-items: right;">
+        <div ngbDropdown id="aa20819di9" class="d-inline-block">
+          <a id="profileMenu" ngbDropdownToggle class="userNameStyle">Test User</a>
+          <!--img src="assets/logo.png" alt="..." class="rounded-circle"-->
+
+          <div class="dropdown-menu dropdown-menu-right" style="top:34px;"
+               aria-labelledby="profileMenu">
+            <a id="aac0819bu1" class="w3-button logoutMenuItem fa fa-sign-out"> &nbsp;Logout </a>
             <hr>
-            <a class="dropdown-item fa fa-user profileMenuItem fa-fw" href="#">&nbsp; Profile</a>
-            <hr>
-            <a class="dropdown-item fa fa-cog profileMenuItem" href="#">&nbsp; Settings</a>
-            <hr>
-            <a class="dropdown-item fa fa-calendar profileMenuItem" href="#">&nbsp; Calendar</a>
-            <hr>
-            <a class="dropdown-item fa fa-envelope-o profileMenuItem" href="#">&nbsp; Inbox</a>
-            <hr>
-            <a class="dropdown-item fa fa-tasks profileMenuItem" href="#">&nbsp; Tasks</a>
           </div>
         </div>
 
@@ -86,7 +97,7 @@
       <div class="w3-sidebar w3-bar-block card menubarWidth">
         <a routerLink="home" id="aac0819a1" class="w3-bar-item w3-button homeBorder  menuHighlight homemenuHeader"><i
           class="fa fa-home iconStyle menuIconSpacing"></i>{{homelabel}} </a>
-        <button class="w3-button w3-block w3-left-align border text-muted menuHeader" (click)="displayMenuList()"><i
+        <button class="w3-button w3-block w3-left-align  text-muted menuHeader" (click)="displayMenuList()"><i
           class="fa fa-folder-o iconStyle menuIconSpacing"></i> {{collection}}
           <span class="" #collectionIcon></span>
         </button>
@@ -106,18 +117,20 @@
             </ul>
           </nav>
         </div>
-        
+
       </div>
     </div>
     <div class="col-sm-11 mainContentMinpadding" #maincont id="maincont">
     </div>
-  
+
   </div>
- 
+
 </div>
-<div class="footer">
-  <p>&copy; Copyright PWN 2017
+<div class="border border-primary footer">
+
+  <p align="center">&copy; Copyright MIT
   </p>
+
 </div>
 
 </body>

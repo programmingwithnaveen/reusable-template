@@ -80,7 +80,7 @@ export class AppComponent {
     else {
       this.showordersmenu();
       this.maincont.nativeElement.className = 'col-sm-10 mainContentpadding';
-      this.collectionIcon.nativeElement.className = 'fa fa-chevron-down menuIconPosition';
+      this.collectionIcon.nativeElement.className = 'fa fa-chevron-down menuIconPosition pull-right';
 
     }
   }

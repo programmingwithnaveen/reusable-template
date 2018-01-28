@@ -1,6 +1,5 @@
 h1 {
   color: #369;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 250%;
 }
 
@@ -10,7 +9,7 @@ h1 {
   background-color: #fff;
   position: absolute;
   /*position:fixed!important;*/
-  z-index: 1;
+  z-index: 0;
   overflow: visible
 }
 
@@ -209,13 +208,13 @@ h1 {
 
 .homeBorder {
   border-top: none !important;
-  border-right: 1px solid #D7DBDD !important;
+  border-right: 0px solid #D7DBDD !important;
 }
 
 * {
   padding: 0;
   margin: 0;
-  font: normal normal normal 14px/1 "nimbus-sans";
+  /*font: normal normal normal 14px/1 "nimbus-sans";*/
 }
 
 .fa .fa-th .menuIconStyle .dropdown-toggle::after {
@@ -272,7 +271,7 @@ nav.vertical li:hover > ul {
 .mainContentpadding {
   margin-left: 10px !important;
   left: 13%;
-
+  padding-left: 20px;
 }
 
 .mainContentMinpadding {
@@ -281,17 +280,17 @@ nav.vertical li:hover > ul {
 }
 
 .fa {
-  font-family: arial;
+  font-family: 'FontAwesome' !important;
 }
 
 .fa::before {
-  font-family: 'FontAwesome';
+  font-family: 'FontAwesome' !important;
 }
 
 .menufixed {
   position: fixed;
   width: 100%;
-  z-index: 1000;
+  z-index: 0;
   height: 100%;
   top: 50px;
   opacity: 50%;
@@ -310,7 +309,7 @@ nav.vertical li:hover > ul {
 }
 
 .iconStyle {
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .submenuStyle {
@@ -321,42 +320,64 @@ nav.vertical li:hover > ul {
 
 .thirdlevelmenu {
   padding-left: 25px !important;
+  font-family: "nimbus-sans";
+  font-size: 13px;
+  line-height: 10px;
+  color: #585858 !important;
+  height: 28px;
 }
 
 .secondlevelmenu {
   background: #f6f6f6;
-  opacity: 70%;
-  color: #585858;
+  /*opacity: 70%;*/
+  color: #585858 !important;
+  font-family: "nimbus-sans";
+  font-size: 13px;
+  line-height: 13px;
+  padding-left: 15px !important;
+  padding-right: 0px !important;
+  height: 32px;
 }
 
 .menuFont {
   font-family: "nimbus-sans";
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   color: #585858;
 }
 
 .homemenuHeader {
+  font-family: "nimbus-sans" !important;
   font-size: 16px;
-  padding-left: 15px !important;
   height: 50px !important;
   font-weight: normal;
-  font-family: "nimbus-sans";
+  padding-left: 0px !important;
 }
 
 .menuHeader {
-  font-family: "nimbus-sans";
+  font-family: "nimbus-sans" !important;
   font-weight: normal;
   font-size: 16px;
   color: #585858;
-  padding-left: 15px !important;
+  height: 40px;
+  padding-left: 0px !important;
+  padding-right: 0px;
+  border-top: 1px solid #979797 !important;
+  border-bottom: 1px solid #979797 !important;
+  /*padding-right: 6px !important;*/
 }
 
 .menuHighlight {
   color: #0077C8;
-  font-family: "nimbus-sans";
   font-weight: normal;
   font-size: 16px;
+}
+
+.logoutMenuItem{
+  color: #0077C8 !important;
+  font-weight: normal;
+  font-size: 16px;
+  color: #979797;
 }
 
 .profileMenuItem {
@@ -372,19 +393,26 @@ nav.vertical li:hover > ul {
 }
 
 .menuIconStyle {
+  font-family:FontAwesome;
+  font-size:20px;
+  color:#9b9b9b;
+  text-align:left;
+}
+
+.collapseIconStyle {
   color: #979797;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .userNameStyle {
-  color: #979797;
-  border-left: 1px solid #979797 !important;
-  padding-left: 25px !important;
+  color: #979797 !important;
+  /*border-left: 1px solid #979797 !important;*/
+  padding-left: 15px !important;
   padding-right: 10px !important;
 }
 
 .userProfileStyle {
-  padding-top: 5px !important;
+  padding-top: 0px !important;
 }
 
 .searchBoxStyle {
@@ -393,7 +421,20 @@ nav.vertical li:hover > ul {
 }
 
 .menuIconSpacing {
+  padding-left:15px;
   padding-right: 15px !important;
+}
+
+.menuArrowSpacing{
+  display: block;
+  padding-top: 8px;
+  padding-right: 12px;
+  margin-left: 6px;
+}
+
+.pull-right{
+  padding-right: 12px;
+  margin-left:6px
 }
 
 .fa.fa-th.menuIconStyle.dropdown-toggle::after {
@@ -401,19 +442,29 @@ nav.vertical li:hover > ul {
 }
 
 .menubarWidth {
-  width: 75%;
+  width: 87%;
 }
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background-color: white;
-  color: #979797;
+
+.tilesspacing{
   text-align: center;
-  padding: 10px !important;
-  border-top: 1px solid;
-  border-top-color: rgb(151, 151, 151);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pageHeader{
+  font-size: 20px;
+  color: #0077C8;
+}
+
+
+.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:30px;   /* Height of the footer */
+  background-color: white !important;
+  /*border: 1px solid black;*/
+  /*background-color: red;*/
+  /*background:#6cf;*/
 }
